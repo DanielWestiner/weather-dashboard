@@ -76,9 +76,9 @@ function getWeather(city, latitude, longitude) {
 
 
 
-function currentWeather
+// function currentWeather
 
-function fiveDayForecast
+// function fiveDayForecast
 
 
 
@@ -103,12 +103,6 @@ function fiveDayForecast
 //     });
 // }
 
-let weatherForecast =
-  "https://api.openweathermap.org/data/2.5/onecall?lat=" +
-  latitude +
-  "&lon=" +
-  longitude +
-  "&exclude=minutely,hourly,alerts&units=imperial&appid=2824096d7fe149eff6336b2232af2c6c";
 
 // Get the weather data
 
