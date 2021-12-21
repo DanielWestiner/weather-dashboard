@@ -14,27 +14,91 @@
             <div class="row"></div>
                 <h1>Weather Dashboard</h1>
                     <h2>Check the forecast!</h2>
-        </div>
-    </header>
-    <section>
+        
+        </header>
+        <section>
         <!-- Search Form -->
-        <aside class="container-fluid">
-            <div class="row">
-                <div class="col-md-2">
-                    <form action="" class="form-group">
-                        <label for="citySearch"></label>
-                        <input type="search" placeholder="Enter a Location" class="form-control" id="citySearch">
-                        <div class="d-grip gap=2 my-3">
-                            <button type="button" class="btn btn-primary" id="searchBtn">Search</button>
+         <aside class="container-fluid">
+             <div class="row">
+                    <div class="col-md-2">
+                        <form action="" class="form-group">
+                         <label for="citySearch"></label>
+                            <input type="search" placeholder="Enter a Location" class="form-control" id="citySearch">
+                            <div class="d-grid gap-2 my-3">
+                                <button type="button" class="btn btn-primary" id="searchBtn">Search</button>
+                            </div>
+                        </form>
+                 </div>
+             </div>
+            </aside>
+            <article class="cold-md-10">
+                <div class="mx-4 my-4">
+                    <div class="card py-1 currentForecast">
+                        <h4 class="card-title mt-2 text-center" id="citySearch"></h4>
+                        <div class="d-flex flex-row">
+                            <div class="border-primary mb-3 mx-1 card">
+                                <div class="card-body text-primary">
+                                    <h3 id="CurrentCity" class="card-title"></h3>
+                                        <img src="" alt="">
+                                        <p>Temperature:</p>
+                                        <p>Wind:</p>
+                                        <p>Humidity:</p>
+                                        <p>UV Index:</p>
+                                </div>
+                            </div>
                         </div>
-                    </form>
-
+                    </div>
                 </div>
-            </div>
+            </article>
 
-        </aside>
+        <!-- Building out the 5 day forecast -->
+            <article class="mt-4">
+                <div class="row"></div>
+                <div class="card pb-5 pl-5 fiveDayForecast">
+                    <div class="d-flex flex-row">
+                        <div class="card mx-2 mb-3 border-primary">
+                            <div class="card-body text-primary">
+                                <h4 id="firstDay">Day 1</h4>
+                                <img src="" alt="">
+                                <p id="firstDayForecast">Temp:  Wind:  Humidity:  </p>
+                            </div>
+                        </div>
 
+                        <div class="card mx-2 mb-3 border-primary">
+                            <div class="card-body text-primary">
+                                <h4 id="firstDay">Day 2</h4>
+                                <img src="" alt="">
+                                <p id="secondDayForecast">Temp:  Wind:  Humidity:  </p>
+                            </div>
+                        </div>
 
+                        <div class="card mx-2 mb-3 border-primary">
+                            <div class="card-body text-primary">
+                                <h4 id="firstDay">Day 3</h4>
+                                <img src="" alt="">
+                                <p id="thirdDayForecast">Temp:  Wind:  Humidity:  </p>
+                            </div>
+                        </div>
+
+                        <div class="card mx-2 mb-3 border-primary">
+                            <div class="card-body text-primary">
+                                <h4 id="firstDay">Day 4</h4>
+                                <img src="" alt="">
+                                <p id="fourthDayForecast">Temp:  Wind:  Humidity:  </p>
+                            </div>
+                        </div>
+
+                        <div class="card mx-2 mb-3 border-primary">
+                            <div class="card-body text-primary">
+                                <h4 id="firstDay">Day 5</h4>
+                                <img src="" alt="">
+                                <p id="fifthDayForecast">Temp:  Wind:  Humidity:  </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
 
 
 
@@ -46,7 +110,9 @@
 
 
 
-
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+    integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+    crossorigin="anonymous"></script>
     <script src="./assets/script.js"></script>
 </body>
 </html>
